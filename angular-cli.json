@@ -2,7 +2,7 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
     "version": "1.0.0",
-    "name": "meat"
+    "name": "Locatinos"
   },
   "apps": [
     {
@@ -18,14 +18,14 @@
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
       "testTsconfig": "tsconfig.spec.json",
-      "prefix": "mt",
+      "prefix": "locatinos",
       "mobile": false,
       "styles": [
         "../node_modules/font-awesome/css/font-awesome.min.css",
         "../node_modules/admin-lte/bootstrap/css/bootstrap.min.css",
         "../node_modules/admin-lte/dist/css/AdminLTE.min.css",
-        "../node_modules/admin-lte/dist/css/skins/skin-red.min.css",
-        "../node_modules/admin-lte/plugins/iCheck/flat/red.css",
+        "../node_modules/admin-lte/dist/css/skins/skin-yellow.min.css",
+        "../node_modules/admin-lte/plugins/iCheck/flat/yellow.css",
         "styles.css"
       ],
       "scripts": [
