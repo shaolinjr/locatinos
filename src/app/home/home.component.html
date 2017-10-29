@@ -1,8 +1,37 @@
   <!-- Full Width Column -->
   <div class="content-wrapper">
     <div class="container">
-
-      {{content}}
-
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box box-solid">
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li *ngFor="let carousel of cars; let i = index" data-target="#carousel-example-generic" [attr.data-slide-to]="i" [class.active]="i == 0"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item" *ngFor="let carousel of cars; let index = index" [class.active]="index == 0">
+                      <locatinos-carousel [carousel]="carousel"></locatinos-carousel>
+                  </div>
+      
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                  <span class="fa fa-angle-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                  <span class="fa fa-angle-right"></span>
+                </a>
+              </div>
+            </div>
+            <!-- /.box-body -->
+            <div class="home-frota">
+              <h1> Conheça nossa frota </h1>
+              <h4> As melhores opções para você reservar e aproveitar</h4>
+              <button type="button" class="btn btn-block btn-warning btn-lg">Confira todos os grupos</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
